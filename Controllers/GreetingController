@@ -11,13 +11,13 @@ public class GreetingController : ControllerBase{
     // public GreetingController()
     // {
     //     Welcome("Welcome " + userInput)
-
     // }
 
     [HttpGet]
-    [Route("GetName")]
+    [Route("GetName/{userInput}")]
 
-    public string welcomeMsg GetName(){
-        return welcomeMsg
+    public string welcomeMsg GetName(string userInput){
+        welcomeMsg = ("Salut " + userInput);
+        return welcomeMsg;
     }
 }
