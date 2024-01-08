@@ -1,0 +1,23 @@
+using Microsoft.AspNetCore.Mvc;
+
+namespace API_SayHelloEndpoint.Controllers;
+
+[ApiController]
+[Route("controller")]
+
+public class GreetingController : ControllerBase{
+    
+    // public string welcomeMsg = new();
+    // public GreetingController()
+    // {
+    //     Welcome("Welcome " + userInput)
+
+    // }
+
+    [HttpGet]
+    [Route("GetName")]
+
+    public string welcomeMsg GetName(){
+        return welcomeMsg
+    }
+}
